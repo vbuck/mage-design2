@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!--
+
+/**
+ * System design enhancements module configuration.
+ *
+ * PHP Version 5
+ *
+ * @package   Vbuck_Design2
+ * @author    Rick Buczynski <me@rickbuczynski.com>
+ * @copyright 2015 Rick Buczynski
+ */
+
+-->
+<config>
+    <modules>
+        <Vbuck_Design2>
+            <version>1.1.0</version>
+        </Vbuck_Design2>
+    </modules>
+    <default />
+    <global>
+        <helpers>
+            <design2>
+                <class>Vbuck_Design2_Helper</class>
+            </design2>
+        </helpers>
+        <blocks>
+            <design2>
+                <class>Vbuck_Design2_Block</class>
+            </design2>
+            <adminhtml>
+                <rewrite>
+                    <system_design_grid>Vbuck_Design2_Block_Adminhtml_System_Design_Grid</system_design_grid>
+                    <system_design_edit_tabs>Vbuck_Design2_Block_Adminhtml_System_Design_Edit_Tabs</system_design_edit_tabs>
+                    <system_design_edit_tab_general>Vbuck_Design2_Block_Adminhtml_System_Design_Edit_Tab_General</system_design_edit_tab_general>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <models>
+            <design2>
+                <class>Vbuck_Design2_Model</class>
+            </design2>
+            <core>
+                <rewrite>
+                    <design>Vbuck_Design2_Model_Core_Design</design>
+                </rewrite>
+            </core>
+            <core_resource>
+                <rewrite>
+                    <design>Vbuck_Design2_Model_Resource_Core_Design</design>
+                </rewrite>
+            </core_resource>
+        </models>
+        <resources>
+            <design2_setup>
+                <setup>
+                    <module>Vbuck_Design2</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </design2_setup>
+        </resources>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_layout_generate_xml_before>
+                <observers>
+                    <design2_add_layout_updates>
+                        <type>singleton</type>
+                        <class>design2/observer</class>
+                        <method>addLayoutUpdates</method>
+                    </design2_add_layout_updates>
+                </observers>
+            </controller_action_layout_generate_xml_before>
+        </events>
+    </frontend>
+</config>

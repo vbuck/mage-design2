@@ -1,0 +1,16 @@
+{
+    "name"          : "vbuck/mage-design2",
+    "type"          : "magento-module",
+    "license"       : "MIT",
+    "homepage"      : "http://www.rickbuczynski.com/",
+    "description"   : "Enhance Magento's design change system with more functionality.",
+    "authors": [
+        {
+            "name"  : "Rick Buczynski",
+            "email" : "me@rickbuczynski.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
