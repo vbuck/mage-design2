@@ -29,11 +29,11 @@ know the route, then you can target the page. Here are some use cases:
 * Any time you don't want to edit local.xml or a template
 
 ## Screenshots
-![http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Edit_Design_Change___Design___System___Magento_Admin-e1436450261650.jpg]
+![Design2](http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Edit_Design_Change___Design___System___Magento_Admin-e1436450261650.jpg)
 
-![http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Edit_Design_Change___Design___System___Magento_Admin-2-e1436450273228.jpg]
+![Design2](http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Edit_Design_Change___Design___System___Magento_Admin-2-e1436450273228.jpg)
 
-![http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Disc_Store-e1436450292464.jpg]
+![Design2](http://blog.rickbuczynski.com/wp-content/uploads/2015/07/Disc_Store-e1436450292464.jpg)
 
 ## Installation
 With modman,
